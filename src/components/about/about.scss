@@ -17,7 +17,6 @@
         align-items: flex-start;
         padding-top: 5%;
         padding-bottom: 5%;
-
         &_text{
             font-weight: 400;
             letter-spacing: 2px;
@@ -43,6 +42,7 @@
         }
         &_section{
             flex-direction: column;
+            align-items: center;
             &_image{
                 order: 2;
                 display: flex;
@@ -51,8 +51,8 @@
                 overflow-x: hidden;
             }
             &_img{
-                max-width: 400px;
-                padding-right: 15%;
+                max-width: 350px;
+
             }
             &_text{
                 text-align: center;

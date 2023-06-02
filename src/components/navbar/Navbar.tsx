@@ -7,6 +7,9 @@ export const Navbar = () => {
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
     };
+      const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
 
     return (
         <nav className='navbar'>
@@ -23,10 +26,10 @@ export const Navbar = () => {
                 </div>
                 <div id="menu" className={isMenuOpen ? 'overlay' : ''}>
                     <ul>
-                        <a href="#home">Home</a>
-                        <a href="#about">Acerca de mí</a>
-                        <a href="#projects">Proyectos</a>
-                        <a href="#contact">Contacto</a>
+                        <a href="#home" onClick={closeMenu}>Home</a>
+                        <a href="#about" onClick={closeMenu}>Acerca de mí</a>
+                        <a href="#projects" onClick={closeMenu}>Proyectos</a>
+                        <a href="#contact" onClick={closeMenu}>Contacto</a>
                     </ul>
                 </div>
         </nav> 

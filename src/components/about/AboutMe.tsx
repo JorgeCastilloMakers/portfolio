@@ -1,9 +1,9 @@
 import React from 'react';
-import PictureAbout from '../../../public/picture-about.png'
+import PictureAbout from '../../assets/picture-about.png'
 import { Slider } from '../slider/Slider';
 import './about.scss';
 import Lottie from "lottie-react";
-import Chevron from '../../../public/chevron-down.json';
+import Chevron from '../../assets/chevron-down.json';
 
 const style = {
     width: 100,

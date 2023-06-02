@@ -1,5 +1,5 @@
 import React from 'react';
-import PictureHero from '../../../public/picture-hero.png';
+import PictureHero from '../../assets/picture-hero.png';
 import { Button } from '../button/Button';
 import './hero.scss';
 
