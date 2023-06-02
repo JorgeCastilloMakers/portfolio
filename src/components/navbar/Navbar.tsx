@@ -12,10 +12,10 @@ export const Navbar = () => {
         <nav className='navbar'>
             <h2 className='navbar_logo'>Jorge<span className='navbar_logo_s'>Castillo</span></h2>
                     <ul className='navbar_list'>
-                        <a className='navbar_list_item' href="#">Home</a>
-                        <a className='navbar_list_item' href="#">Acerca de mí</a>
-                        <a className='navbar_list_item' href="#">Proyectos</a>
-                        <a className='navbar_list_item' href="#">Contacto</a>
+                        <a className='navbar_list_item' href="#home">Home</a>
+                        <a className='navbar_list_item' href="#about">Acerca de mí</a>
+                        <a className='navbar_list_item' href="#projects">Proyectos</a>
+                        <a className='navbar_list_item' href="#contact">Contacto</a>
                     </ul>
             
                 <div id="burger-menu" className={isMenuOpen ? 'close' : ''} onClick={toggleMenu}>
@@ -23,10 +23,10 @@ export const Navbar = () => {
                 </div>
                 <div id="menu" className={isMenuOpen ? 'overlay' : ''}>
                     <ul>
-                        <a href="#">Home</a>
-                        <a href="#">Acerca de mí</a>
-                        <a href="#">Proyectos</a>
-                        <a href="#">Contacto</a>
+                        <a href="#home">Home</a>
+                        <a href="#about">Acerca de mí</a>
+                        <a href="#projects">Proyectos</a>
+                        <a href="#contact">Contacto</a>
                     </ul>
                 </div>
         </nav> 

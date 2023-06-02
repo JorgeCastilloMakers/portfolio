@@ -11,7 +11,7 @@ const style = {
 
 export const AboutMe = () => {
     return (
-        <div className='about'>
+        <div className='about' id='about'>
             <h2 className='about_title'>Acerca de mí</h2>
             <div className='about_section'>
                 <div className='about_section_image'>

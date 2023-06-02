@@ -5,12 +5,11 @@ import { projects } from './projects';
 
 export const ProjectsSection = () => {
   return (
-      <div className='projects'>
+      <div className='projects' id='projects'>
           <h2 className='projects_title'>Proyectos</h2>
           <div className="card-container">
               {projects.map(({image, name, meta, vercel, github, description}) => (
                   <ProjectCard
-                      key={name}
                       image={image}
                       name={name}
                       meta={meta}

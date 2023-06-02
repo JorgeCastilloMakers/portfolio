@@ -4,7 +4,6 @@ import { RxVercelLogo } from 'react-icons/rx';
 import { AiFillGithub } from 'react-icons/ai';
 
 interface Props{
-    key: string;
     image: string;
     name: string;
     meta: string;
@@ -14,9 +13,9 @@ interface Props{
 
 }
 
-export const ProjectCard = ({key, image, name, meta, vercel, github, description}: Props) => {
+export const ProjectCard = ({image, name, meta, vercel, github, description}: Props) => {
   return (
-      <div className='card' key={key}>
+      <div className='card' key={name}>
           <img className='card_image' src={image} alt={name} />
           <div className='card_titles'>
               <h3 className='card_titles_first'>{ name }</h3>

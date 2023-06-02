@@ -64,3 +64,12 @@
         line-height: 30px;
     }
 }
+
+@media (max-width: 878px){
+    .card{
+        overflow-x: hidden;
+        &_image{
+            padding: 5%;
+        }
+    }
+}
