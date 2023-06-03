@@ -9,7 +9,7 @@ export const Hero = () => {
             <div className='hero_title'>
                 <h2 className='hero_title_part-One'>Simple,</h2>
                 <h2 className='hero_title_part-Two'>Creativo...</h2>
-                <h3 className='hero_title_name'>Jorge Castillo, Frontend Developer / Web Designer</h3>
+                <h3 className='hero_title_name'>Jorge Castillo, Frontend Developer | Web Designer</h3>
             </div>
             <div className='hero_image'>
                 <img className='hero_image_picture' src={PictureHero} alt="picture-jorge-castillo" />
