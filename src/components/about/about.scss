@@ -18,10 +18,14 @@
         padding-top: 5%;
         padding-bottom: 5%;
         &_text{
+            width: 50%;
             font-weight: 400;
             letter-spacing: 2px;
             line-height: 30px;
             padding-right: 5%;
+        }
+        &_img{
+            max-width: 600px;
         }
     }
 }
@@ -34,7 +38,7 @@
     padding-top: 5%;
 }
 
-@media (max-width: 870px){
+@media (max-width: 878px){
     .about{
         &_title{
             text-align: center;

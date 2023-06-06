@@ -19,7 +19,7 @@ export const AboutMe = () => {
                 </div>
                 <h3 className='about_section_text'>
                     Hola, soy Jorge 👋🏻
-                    Me apasiona el diseño y soy muy creativo en la creación de componentes visuales.
+                    Me apasiona el diseño y tengo habilidades para la creación de componentes visuales.
                     Curioso, proactivo, dispuesto a la resolución de problemas.
                     Siempre tuve en mis pasiones lo IT pero la vida me llevo por otros lados, los cuales me dieron experiencia en otras aptitudes, como el manejo de equipos de trabajo.
                     Siempre estuve ligado al diseño por haber estudiado diseño gráfico, pero desde el 2020 comencé a diseñar paginas webs, en un principio con CMS, pero con el correr del tiempo y proyectos un CMS o una app No Code no cubría la problemática que quería resolver, lo que me hizo entrar en el mundo de la programación para que pueda descubrir mi verdadera vocación, el Frontend.
