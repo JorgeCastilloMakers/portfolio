@@ -18,14 +18,19 @@
         padding-top: 5%;
         padding-bottom: 5%;
         &_text{
-            width: 50%;
+            width: 100%;
             font-weight: 400;
             letter-spacing: 2px;
             line-height: 30px;
             padding-right: 5%;
         }
+        &_image{
+            width: 100%;
+            justify-content: center;
+            display: flex;
+        }
         &_img{
-            max-width: 600px;
+            max-width: 650px;
         }
     }
 }
@@ -55,7 +60,7 @@
                 overflow-x: hidden;
             }
             &_img{
-                max-width: 350px;
+                max-width: 450px;
 
             }
             &_text{
@@ -64,6 +69,7 @@
                 font-size: 16px;
                 line-height: 25px;
                 padding-bottom: 30px;
+                padding-top: 50px;
             }
         }
 

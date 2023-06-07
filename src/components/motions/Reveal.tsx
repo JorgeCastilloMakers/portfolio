@@ -1,23 +1,37 @@
-import { motion } from "framer-motion";
-import React from "react";
+import { motion, useInView, useAnimation } from "framer-motion";
+import React, {useRef, useEffect} from "react";
 
 
 interface Props{
     children: JSX.Element;
     width?: 'fit-content' | '100%';
+    justifyContent?: 'center' | 'flex-start' | 'flex-end';
+    duration?: number;
+    delay?: number;
 }
 
-export const Reveal = ({ children, width = 'fit-content' }: Props) => {
+export const Reveal = ({ children, width = 'fit-content', justifyContent = 'center', duration= 0.8, delay= 0.25 }: Props) => {
+    const ref = useRef(null);
+    const isInView = useInView(ref, { once: true });
+    const mainControls = useAnimation();
+
+    useEffect(() => {
+        if (isInView) {
+            mainControls.start('visible');
+        }
+    }, [isInView])
+    
     return (
-        <div style={{position: 'relative', width, overflow: 'hidden'}}>
+        <div ref={ref} style={{position: 'relative', width, overflow: 'hidden', display:'flex', justifyContent}}>
             <motion.div
+                style={{width, display:'flex', justifyContent}}
                 variants={{
                     hidden: { opacity: 0, y: 75 },
-                    visible: {opacity: 1, y: 0},
+                    visible: { opacity: 1, y: 0 },
                 }}
                 initial='hidden'
-                animate='visible'
-                transition={{duration: 0.8, delay: 0.25}}
+                animate={mainControls}
+                transition={{duration, delay}}
             >
                 {children}
             </motion.div>

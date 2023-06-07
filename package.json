@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
+    "canvas-confetti": "^1.6.0",
     "formik": "^2.4.1",
     "framer-motion": "^10.12.16",
     "lottie-react": "^2.4.0",
@@ -22,6 +23,7 @@
     "yup": "^1.2.0"
   },
   "devDependencies": {
+    "@types/canvas-confetti": "^1.6.0",
     "@types/node": "^20.2.5",
     "@types/react": "^18.0.37",
     "@types/react-dom": "^18.0.11",

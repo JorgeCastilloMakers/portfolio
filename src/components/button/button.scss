@@ -1,16 +1,17 @@
 .btn{
     border: none;
     background-color: var(--color-yellow);
-    padding: 2% 5%;
+    padding: 1% 2%;
     border-radius: 20px;
     font-family: var(--font-serrat);
     color: var(--color-grey);
     cursor: pointer;
     margin-top: 5%;
     margin-bottom: 5%;
+    font-size: 20px;
 }
 
-@media (min-width: 1024px){
+@media (max-width: 1024px){
     .btn{
         padding: 1% 2%;
         font-size: 18px;
