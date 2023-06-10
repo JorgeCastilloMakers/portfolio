@@ -1,42 +1,62 @@
 .card{
     width: 100%;
     height: 100%;
-    max-width: 350px;
+    max-width: 450px;
     max-height: 650px;
     min-height: 650px;
-    background-color: white;
     padding: 2%;
-    border-radius: 20px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
     gap: 20px;
+    flex: 1 1 350px;
     &_image{
-        max-width: 310px;
-        padding-right: 4%;
+        &_container{
+            background-color: var(--color-grey);
+            width: 100%;
+            height: 100%;
+            min-height: 200px;
+            max-height: 200px;
+            min-width: 350px;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            overflow-y: hidden;
+        }
+        max-width: 340px;
+        border-radius: 10px;
         align-self: center;
+        position: relative;
+        bottom: 0;
+        top: 45px;
+        transition: all 0.5s ease;
+        &:hover{
+            transform: scale(1.1);
+            top: 0;
+        }
     }
     &_titles{
         width: 100%;
         min-height: 70px;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: flex-start;
-        align-self: flex-start;
         &_first{
             width: 100%;
-            text-align: center;
             font-size: 22px;
             font-weight: 800;
-            min-height: 60px;
+            min-height: 50px;
         }
         &_second{
             width: 100%;
-            text-align: center;
-            font-size: 18px;
-            font-weight: 500;
+            font-size: 15px;
+            min-height: 32px;
+            font-weight: 400;
+            text-transform: uppercase;
+            color: var(--color-yellow);
         }
     }
     &_links{
@@ -45,38 +65,24 @@
     justify-content: space-between;
     align-items: center;
     padding-right: 2%;
-        &_link{
-            text-decoration: none;
-            color: var(--color-grey);
-            font-size: 18px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            &:hover{
-                color: var(--color-yellow);
-            }
-            &_icon{
-                padding-right: 10px;
-                font-size: 24px;
-                color: var(--color-yellow);
-            }
-        }
     }
     &_text{
-        background-color: #fafafa;
         border-radius: 10px;
         font-size: 18px;
         font-weight: 400;
-        padding: 20px;
         line-height: 30px;
     }
 }
 
 @media (max-width: 878px){
     .card{
-        overflow-x: hidden;
+
         &_image{
-            padding: 5%;
+            max-width: 250px;
+            &_container{
+            min-height: 150px;
+            max-height: 150px;
+            }
         }
     }
 }

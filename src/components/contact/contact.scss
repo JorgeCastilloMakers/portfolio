@@ -8,6 +8,7 @@
     padding-top: 5%;
     justify-content: center;
     align-items: flex-start;
+    scroll-margin-top: calc(45px + 3.6rem);
     &_title{
         font-weight: 800;
         font-size: 45px;
@@ -19,12 +20,53 @@
         justify-content: center;
         align-items: center;
     }
-    &_text a{
+    &_text_linkedin{
         font-size: 30px;
         padding-left: 6px;
         padding-right: 6px;
         text-decoration: none;
-        color: #007ACC;
+        color: var(--color-grey);
+        &:hover{
+            color: #007ACC; 
+        }
+        &:hover::before{
+            content: "Linkedin";
+            width: 3%;
+            display: flex;
+            justify-content: center;
+            height: 15px;
+            background-color: #fafafa2d;
+            border-radius: 5px;
+            position: absolute;
+            color: #fafafa;
+            font-size: 10px;
+            bottom: 0px;
+            
+        }
+    }
+    &_text_whatsapp{
+        font-size: 30px;
+        padding-left: 6px;
+        padding-right: 6px;
+        text-decoration: none;
+        color: var(--color-grey);
+        &:hover{
+            color: #0baa05; 
+        }
+        &:hover::before{
+            content: "Whatsapp";
+            width: 3%;
+            display: flex;
+            justify-content: center;
+            height: 15px;
+            background-color: #fafafa2d;
+            border-radius: 5px;
+            position: absolute;
+            color: #fafafa;
+            font-size: 10px;
+            bottom: 0px;
+            
+        }
     }
     &_form{
         align-self: center;
@@ -69,10 +111,10 @@
     &_btn{
         align-self: center;
         border: none;
-        width: 50%;
+        width: 40%;
         background-color: var(--color-yellow);
         padding: 2% 5%;
-        border-radius: 20px;
+        border-radius: 10px;
         font-family: var(--font-serrat);
         color: var(--color-grey);
         cursor: pointer;
@@ -84,6 +126,7 @@
 
 @media (max-width: 878px){
     .contact{
+        height: unset;
         &_title{
             align-self: center;
         }
@@ -101,5 +144,17 @@
         &_form{
         width: 100%;
     }
+        &_text_linkedin{
+        &:hover::before{
+            display: none;
+            
+        }
     }
+    &_text_whatsapp{
+        &:hover::before{
+            display: none;
+            
+        }
+    }
+}
 }

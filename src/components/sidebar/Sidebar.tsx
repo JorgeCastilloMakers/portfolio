@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './navbar.scss';
 
-export const Navbar = () => {
+export const Sidebar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     const toggleMenu = () => {
@@ -13,7 +13,9 @@ export const Navbar = () => {
 
     return (
         <nav className='navbar'>
-            <h2 className='navbar_logo'>Jorge<span className='navbar_logo_s'>Castillo</span></h2>
+            <div className='navbar_logo_container'>
+            <h2 className='navbar_logo'>JC<span className='navbar_logo_s'>.</span></h2>
+            </div>
                     <ul className='navbar_list'>
                         <a className='navbar_list_item' href="#home">Home</a>
                         <a className='navbar_list_item' href="#about">Acerca de mí</a>
@@ -21,7 +23,7 @@ export const Navbar = () => {
                         <a className='navbar_list_item' href="#contact">Contacto</a>
                     </ul>
             
-                <div id="burger-menu" className={isMenuOpen ? 'close' : ''} onClick={toggleMenu}>
+                {/* <div id="burger-menu" className={isMenuOpen ? 'close' : ''} onClick={toggleMenu}>
                     <span></span>
                 </div>
                 <div id="menu" className={isMenuOpen ? 'overlay' : ''}>
@@ -31,7 +33,7 @@ export const Navbar = () => {
                         <a href="#projects" onClick={closeMenu}>Proyectos</a>
                         <a href="#contact" onClick={closeMenu}>Contacto</a>
                     </ul>
-                </div>
+                </div> */}
         </nav> 
 
   );

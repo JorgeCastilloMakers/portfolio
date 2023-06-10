@@ -3,12 +3,13 @@ import { ProjectCard } from '../projectCard/ProjectCard';
 import './projects.scss';
 import { projects } from './projects';
 import { Reveal } from '../motions/Reveal';
+import { Title } from '../titles/Title';
 
 export const ProjectsSection = () => {
   return (
       <section className='projects' id='projects'>
           <Reveal width='100%' justifyContent='flex-start'>
-            <h2 className='projects_title'>Proyectos</h2>              
+            <Title title='Proyectos'/>            
           </Reveal>
 
           <div className="card-container">

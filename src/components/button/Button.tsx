@@ -15,13 +15,13 @@ export const Button: FC<Props> = ({ text }) => {
     link.download = 'JorgeCastilloCV.pdf';
     link.click();
     confetti({
-  particleCount: 100,
-  spread: 70,
-  origin: { y: 0.6 }
-});
+      particleCount: 100,
+      spread: 70,
+      origin: { y: 0.5, x: 1 }
+    });
   }
     
   return (
-      <button onClick={handleClick} className='btn'>{ text }</button>
+    <button onClick={handleClick} className='btn'>{text}</button>
   )
-}
+};

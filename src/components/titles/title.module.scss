@@ -1,0 +1,42 @@
+.container{
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+}
+.title{
+        font-weight: 800;
+        font-size: 45px;
+        width: 100%;
+}
+.point{
+        color: var(--color-yellow);
+        font-size: 60px;
+}    
+
+.line {
+  width: 100%;
+  height: 1px;
+  background: var(--color-yellow);
+  opacity: 0.3;
+}
+
+@media (max-width: 878px){
+        .title{
+                font-size: 35px;
+                width: 100%;
+        }
+}
+@media (max-width: 678px){
+        .title{
+                font-size: 25px;
+                width: 100%;
+        }
+        .point{
+                font-size: 35px;
+        }
+        .line{
+                width: 50%;
+
+        }
+}

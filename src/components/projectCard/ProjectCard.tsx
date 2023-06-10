@@ -1,11 +1,9 @@
 import React from 'react';
 import './projectcard.scss';
-import { RxVercelLogo } from 'react-icons/rx';
-import { AiFillGithub } from 'react-icons/ai';
 import { Reveal } from '../motions/Reveal';
+import { ProjectLinks } from './projectLinks/ProjectLinks';
 
 interface Props{
-    key?: number;
     image: string;
     name: string;
     meta: string;
@@ -15,15 +13,17 @@ interface Props{
 
 }
 
-export const ProjectCard = ({image, name, meta, vercel, github, description, key}: Props) => {
+export const ProjectCard = ({image, name, meta, vercel, github, description}: Props) => {
   return (
-      <div className='card' key={key}>
+      <div className='card'>
           <Reveal width='100%'>
-          <img className='card_image' src={image} alt={name} />              
+              <div className='card_image_container'>
+                <img className='card_image' src={image} alt={name} />                   
+              </div>
           </Reveal>
 
           <div className='card_titles'>
-              <Reveal width='100%'>
+              <Reveal width='100%' justifyContent='flex-start'>
               <h3 className='card_titles_first'>{ name }</h3>                  
               </Reveal>
               <Reveal width='100%'>
@@ -33,10 +33,7 @@ export const ProjectCard = ({image, name, meta, vercel, github, description, key
           </div>
           <Reveal width='100%'>
           <div className='card_links'>
-              <a className='card_links_link' target="_blank" href={vercel}><span className='card_links_link_icon'><RxVercelLogo /></span> Deploy</a>
-              {github &&
-                  <a className='card_links_link' target="_blank" href={github}><span className='card_links_link_icon'><AiFillGithub /></span> Repositorio</a>
-              }
+                <ProjectLinks github={github} vercel={vercel} />
               </div>              
           </Reveal>
           <Reveal width='100%'>

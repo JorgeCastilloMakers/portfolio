@@ -6,6 +6,7 @@ import * as Yup from 'yup';
 import emailjs from '@emailjs/browser';
 import toast, { Toaster } from 'react-hot-toast';
 import { Reveal } from '../motions/Reveal';
+import { Title } from '../titles/Title';
 
 const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
@@ -36,17 +37,20 @@ export const Contact = () => {
   return (
     <section className='contact' id='contact'>
       <Reveal width='100%' justifyContent='flex-start'>
-      <h2 className='contact_title'>Contacto</h2>        
+        <Title title='Contacto'/>      
       </Reveal>
-      <Reveal width='100%' justifyContent='flex-start'>
+      <Reveal width='100%'>
         <h3 className='contact_text'>
+
           Puedes comunicarte por este formulario, o quizás prefieras ir a mi{' '}
-          <a href='https://www.linkedin.com/in/jorge-ariel-castillo-401686a5/' target='_blank' rel='noopener noreferrer'>
+          <a
+            className='contact_text_linkedin'  
+            href='https://www.linkedin.com/in/jorge-ariel-castillo-frontend/' target='_blank' rel='noopener noreferrer'>
             <AiFillLinkedin />
           </a>{' '}
           o{' '}
           <a
-            style={{ color: '#00BF63' }}
+            className='contact_text_whatsapp'  
             href='https://api.whatsapp.com/send?phone=+5491162744478&text=Hola%20Jorge,%20me%20comunico%20a%20trav%C3%A9s%20de%20tu%20portfolio.'
             target='_blank'
             rel='noopener noreferrer'
