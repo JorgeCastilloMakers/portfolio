@@ -25,13 +25,14 @@ export const AboutMe = () => {
                     {<div className='about_section_text_container'>
                     <p className='about_section_text'>Hola, soy Jorge<span className='about_section_text_dot'>.</span></p>
                         <p className='about_section_text'>
-                        
-
-                        Me apasiona el diseño y tengo habilidades para la creación de componentes visuales.
-                        Curioso, proactivo, dispuesto a la resolución de problemas.
-                        Siempre tuve en mis pasiones lo IT pero la vida me llevo por otros lados, los cuales me dieron experiencia en otras aptitudes, como el manejo de equipos de trabajo.
-                        Siempre estuve ligado al diseño por haber estudiado diseño gráfico, pero desde el 2020 comencé a diseñar paginas webs, en un principio con CMS, pero con el correr del tiempo y proyectos un CMS o una app No Code no cubría la problemática que quería resolver, lo que me hizo entrar en el mundo de la programación para que pueda descubrir mi verdadera vocación, el Frontend.
-
+Desarrollador web con una sólida orientación en frontend y más de tres años de experiencia en diseño y desarrollo de sitios web.
+                        </p>
+                        <p className='about_section_text'>
+Como freelancer, he trabajado en la creación de prototipos, diseño visual y lanzamiento de sitios en WordPress, desarrollando habilidades en trato con clientes y en la implementación de soluciones atractivas y funcionales.
+En mi posición actual como Frontend Developer, utilizo tecnologías como HTML5, CSS3, JavaScript, React, Next.js, Redux Toolkit, Router, Axios, Sass, Material UI y Firebase para construir interfaces intuitivas y eficientes. También he integrado PHP a mis conocimientos en WordPress para personalizar y optimizar experiencias web.
+                        </p>
+                        <p className='about_section_text'>
+La creatividad es mi motor en el diseño de interfaces, donde busco siempre mejorar la experiencia de usuario. Me apoyo en herramientas como Adobe Illustrator, Figma y Canva para llevar a cabo un diseño profesional y funcional. Además, sigo mejorando mi nivel de inglés para continuar expandiendo mis habilidades en este campo en constante evolución.
                         </p>
                         <div className='links'>
                             <h4 className='links_text'>Mis Links <AiOutlineArrowRight /> </h4><MyLinks></MyLinks>

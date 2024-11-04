@@ -8,6 +8,12 @@ import TheKrestel from "../../assets/projectsImages/project-thekrestel.png";
 import Ecovida from "../../assets/projectsImages/project-ecovida.png";
 import Velas from "../../assets/projectsImages/project-velas.png";
 import AbrazoSol from "../../assets/projectsImages/project-abrazodesol.png";
+import Nesus from "../../assets/projectsImages/project-nesus.png";
+import Minimalart from "../../assets/projectsImages/project-minimalart.png";
+import Springboard from "../../assets/projectsImages/project-springboard.png";
+import Syntechnos from "../../assets/projectsImages/project-syntechnos.png";
+import TuttiPet from "../../assets/projectsImages/project-tuttipet.png";
+import Bamuba from "../../assets/projectsImages/project-bamuba.png";
 
 
 export const projects = [
@@ -47,14 +53,14 @@ export const projects = [
         github: 'https://github.com/JorgeCastilloMakers/Hoddie-Code',
         description: 'Sitio Web tipo  e-commerce desarrollado en HTML, CSS y JavaScript Vanilla. Diseño de brand y elementos gráficos.'
     },
-    {
-        id: 5,
-        image: Makers,
-        name: 'Web Design - Makers',
-        meta: 'WordPress - Elementor',
-        vercel: 'https://makers.net.ar/',
-        description: 'Makers es mi web personal y mi marca para trabajar de manera freelance. Está realizada en WordPress con Elementor.'
-    },
+    // {
+    //     id: 5,
+    //     image: Makers,
+    //     name: 'Web Design - Makers',
+    //     meta: 'WordPress - Elementor',
+    //     vercel: 'https://makers.net.ar/',
+    //     description: 'Makers es mi web personal y mi marca para trabajar de manera freelance. Está realizada en WordPress con Elementor.'
+    // },
     {
         id: 6,
         image: TodoPoke,
@@ -96,5 +102,53 @@ export const projects = [
         vercel: 'http://abrazodesolstore.vercel.app/',
         github: 'https://github.com/JorgeCastilloMakers/Abrazo-De-Sol-Store',
         description: 'Es un Landing Page maquetado en HTML y CSS. Se trata de un proyecto entregable para el bootcamp de programación.'
+    },
+    {
+        id: 11,
+        image: Syntechnos,
+        name: 'Web Design - Syntehnos',
+        meta: 'Wordpress - Elementor',
+        vercel: 'https://syntechnos.com/',
+        description: 'Landing Page institucional. Se trabajo con Wordpress y Elementor.'
+    },
+    {
+        id: 12,
+        image: Springboard,
+        name: 'Web Design - Springboard',
+        meta: 'Wordpress/Headless FaustJS + NextJS',
+        vercel: 'https://springboardlatam.com/',
+        description: 'Este proyecto fue realizado para minimalart.co, se realiza la configuracion y puesta en marcha de un cms headless en FaustJS y su frontend realizado en NextJS.'
+    },
+    {
+        id: 13,
+        image: Minimalart,
+        name: 'Web Design - Minimalart',
+        meta: 'Wordpress/Headless FaustJS + NextJS',
+        vercel: 'https://www.minimalart.co/',
+        description: 'Este proyecto fue realizado para minimalart.co, se realiza la configuracion y puesta en marcha de un cms headless en FaustJS y su frontend realizado en NextJS.'
+    },
+    {
+        id: 14,
+        image: Bamuba,
+        name: 'Web Design - Bamuba Turismo',
+        meta: 'Wordpress - Elementor - Woocommerce',
+        vercel: 'https://info.bamubadeltaturismo.com.ar/',
+        description: 'Proyecto realizado en Wordpress con Elementor y Woocommerce para reserva de paquetes de viajes, el sitio se encuentra aún en fase staging.'
+    },
+    {
+        id: 15,
+        image: TuttiPet,
+        name: 'Web Design - TuttiPet',
+        meta: 'Wordpress - Elementor - Woocommerce',
+        vercel: 'https://tuttipet.cl/',
+        description: 'Proyecto Ecommerce realizado en Wordpress con Elementor y Woocommerce el cual incluye pasarela de pagos Transbank.'
+    },
+    {
+        id: 16,
+        image: Nesus,
+        name: 'Web Design - Nesus',
+        meta: 'Wordpress - Elementor',
+        vercel: 'https://nesus.com.ar',
+        description: 'Rediseño completo de web, se migro de un antiguo diseño a una landing page institucional mas funcional.'
     },
 ]
