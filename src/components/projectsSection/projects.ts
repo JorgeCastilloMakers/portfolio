@@ -2,7 +2,7 @@ import InfractorApp from "../../assets/projectsImages/project-infractorApp.png";
 import Holistica from "../../assets/projectsImages/project-holistica.png";
 import OinkBank from "../../assets/projectsImages/project-oinkbank.png";
 import HoodieCode from "../../assets/projectsImages/project-hoodiecode.png";
-import Makers from "../../assets/projectsImages/project-makers.png";
+// import Makers from "../../assets/projectsImages/project-makers.png";
 import TodoPoke from "../../assets/projectsImages/project-todopoke.png";
 import TheKrestel from "../../assets/projectsImages/project-thekrestel.png";
 import Ecovida from "../../assets/projectsImages/project-ecovida.png";
