@@ -14,6 +14,7 @@ import Springboard from "../../assets/projectsImages/project-springboard.png";
 import Syntechnos from "../../assets/projectsImages/project-syntechnos.png";
 import TuttiPet from "../../assets/projectsImages/project-tuttipet.png";
 import Bamuba from "../../assets/projectsImages/project-bamuba.png";
+import Neko from "../../assets/projectsImages/neko-portada.png";
 
 
 export const projects = [
@@ -53,14 +54,14 @@ export const projects = [
         github: 'https://github.com/JorgeCastilloMakers/Hoddie-Code',
         description: 'Sitio Web tipo  e-commerce desarrollado en HTML, CSS y JavaScript Vanilla. Diseño de brand y elementos gráficos.'
     },
-    // {
-    //     id: 5,
-    //     image: Makers,
-    //     name: 'Web Design - Makers',
-    //     meta: 'WordPress - Elementor',
-    //     vercel: 'https://makers.net.ar/',
-    //     description: 'Makers es mi web personal y mi marca para trabajar de manera freelance. Está realizada en WordPress con Elementor.'
-    // },
+    {
+        id: 5,
+        image: Neko,
+        name: 'Web Design - Agencia Neko',
+        meta: 'NextJS - React - Sass - Rive',
+        vercel: 'https://agencia-neko.com/',
+        description: 'Agencia Neko es mi web personal y mi marca para trabajar de manera freelance. Está realizada en Next.js y he utilizado tecnologías como Rive y Framer Motion para animaciones.'
+    },
     {
         id: 6,
         image: TodoPoke,
