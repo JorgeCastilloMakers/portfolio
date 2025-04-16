@@ -1,7 +1,10 @@
 import React from 'react';
-import PictureHero from '../../assets/picture-hero.png';
+// import PictureHero from '../../assets/picture-hero.png';
+import NewPictureHero from '../../assets/new-picture-hero.png';
 import { Reveal } from '../motions/Reveal';
 import './hero.scss';
+import { AiOutlineArrowRight } from 'react-icons/ai';
+import { MyLinks } from '../myLinks/MyLinks';
 
 export const Hero = () => {
     return (
@@ -22,10 +25,16 @@ export const Hero = () => {
                 <Reveal width='100%' delay={0.80}>
                     <h3 className='hero_title_name'>Jorge Castillo, Frontend Developer | Web Designer</h3>
                 </Reveal>
+                <Reveal width='100%' delay={0.80}>
+                <div className='links'>
+                    <h4 className='links_text'>Mis Links <AiOutlineArrowRight /> </h4><MyLinks></MyLinks>
+                </div>                     
+                </Reveal>
+
             </div>
 
             <div className='hero_image'>
-                <img className='hero_image_picture' src={PictureHero} alt="picture-jorge-castillo" />
+                <img className='hero_image_picture' src={NewPictureHero} alt="picture-jorge-castillo" />
             </div>
         </section >
                        

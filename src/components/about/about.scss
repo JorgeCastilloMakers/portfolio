@@ -11,6 +11,7 @@
         background-color: var(--color-grey);
         padding: 5px;
         border-radius: 10px;
+        margin-top: 20px;
     }
     &_section{
         display: flex;
@@ -18,15 +19,20 @@
         height: 100%;
         justify-content: space-between;
         align-items: flex-start;
-        padding-top: 5%;
-        padding-bottom: 5%;
+        padding-top: 2%;
+        padding-bottom: 2%;
         gap: 25px;
+        flex-direction: column;
+        &_text_container{
+            height: 100%;
+        }
         &_text{
             width: 100%;
             font-weight: 300;
             line-height: 30px;
             font-size: 20px;
             padding-right: 10%;
+            margin-bottom: 5px;
             &_dot{
                 color: var(--color-yellow);
                 font-size: 60px;
@@ -36,6 +42,7 @@
             display: flex;
             flex-direction: column;
             width: 100%;
+            height: 100%;
             gap: 5%;
         }
 
@@ -72,6 +79,9 @@
     padding-top: 5%;
 }
 
+// #home .links{
+//     justify-content: flex-end;
+// }
 
 @media (max-width: 878px){
     .about{

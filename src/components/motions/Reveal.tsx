@@ -8,9 +8,10 @@ interface Props{
     justifyContent?: 'center' | 'flex-start' | 'flex-end';
     duration?: number;
     delay?: number;
+    height?: string;
 }
 
-export const Reveal = ({ children, width = 'fit-content', justifyContent = 'center', duration= 0.8, delay= 0.25 }: Props) => {
+export const Reveal = ({ children, width = 'fit-content', justifyContent = 'center', duration= 0.8, delay= 0.25, height }: Props) => {
     const ref = useRef(null);
     const isInView = useInView(ref, { once: true });
     const mainControls = useAnimation();
@@ -22,7 +23,7 @@ export const Reveal = ({ children, width = 'fit-content', justifyContent = 'cent
     }, [isInView])
     
     return (
-        <div ref={ref} style={{position: 'relative', width, overflow: 'hidden', display:'flex', justifyContent}}>
+        <div ref={ref} style={{position: 'relative', width,height, overflow: 'hidden', display:'flex', justifyContent}}>
             <motion.div
                 style={{width, display:'flex', justifyContent}}
                 variants={{
