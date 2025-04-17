@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './navbar.scss';
 
 export const Sidebar = () => {
+  const [isOpen, setIsOpen] = useState(false);
 
+  const toggleMenu = () => {
+    setIsOpen(prev => !prev);
+  };
 
     return (
         <nav className='navbar'>

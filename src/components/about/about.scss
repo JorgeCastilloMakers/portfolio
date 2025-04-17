@@ -91,7 +91,11 @@
             align-items: center;
             gap: 30px;
             height: unset;
+        &_text {
+            padding-right: 0;
+        }            
         }
+
 
     }
 }

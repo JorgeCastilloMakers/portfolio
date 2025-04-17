@@ -5,9 +5,9 @@
     justify-content: flex-start;
     align-items: center;
     gap: 30px;
-    position: relative;
+    position: fixed;
+    z-index: 22;
     padding: 1%;
-    background-color: var(--color-blackGrey);
     &_logo{
         font-family: var(--font-serrat);
         font-weight: 900;
@@ -50,7 +50,7 @@
         height: fit-content;
         padding-top: 10px;
         padding-bottom: 10px;
-        border-right: 1px solid var(--color-blackGrey);
+
         &:hover{
           color: var(--color-yellow);
           background: var(--color-blackGrey2);
