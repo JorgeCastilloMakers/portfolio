@@ -20,12 +20,15 @@ const softSkills = [
 const tools = [
   "Vercel",
   "ChatGPT",
+  "Windsurf",
+  "Vibe coding",
   "v0",
   "Stripe",
   "MedusaJS",
   "FaustJS",
   "Notion",
   "Lovable",
+  "Supabase"
 ];
 
 export const Skills = () => {

@@ -5,7 +5,8 @@ import HoodieCode from "../../assets/projectsImages/project-hoodiecode.png";
 // import Makers from "../../assets/projectsImages/project-makers.png";
 import TodoPoke from "../../assets/projectsImages/project-todopoke.png";
 import TheKrestel from "../../assets/projectsImages/project-thekrestel.png";
-import Ecovida from "../../assets/projectsImages/project-ecovida.png";
+// import Ecovida from "../../assets/projectsImages/project-ecovida.png";
+import CasadelasFlores from "../../assets/projectsImages/project-lacasadelasflores.png";
 import Velas from "../../assets/projectsImages/project-velas.png";
 import AbrazoSol from "../../assets/projectsImages/project-abrazodesol.png";
 import Nesus from "../../assets/projectsImages/project-nesus.png";
@@ -15,6 +16,7 @@ import Syntechnos from "../../assets/projectsImages/project-syntechnos.png";
 import TuttiPet from "../../assets/projectsImages/project-tuttipet.png";
 import Bamuba from "../../assets/projectsImages/project-bamuba.png";
 import Neko from "../../assets/projectsImages/neko-portada.png";
+import CorazonesVagabundos from "../../assets/projectsImages/project-corazonesvagabundos.png";
 
 
 export const projects = [
@@ -81,11 +83,11 @@ export const projects = [
     },
     {
         id: 8,
-        image: Ecovida,
-        name: 'Web Design - Ecovida',
+        image: CasadelasFlores,
+        name: 'Web Design - La casa de las Flores',
         meta: 'Wordpress - Elementor',
-        vercel: 'https://ecovida.org.ar/',
-        description: 'Landing Page institucional con Blog. Se trabajo con Wordpress y Elementor.'
+        vercel: 'https://lacasadelasflores.com.ar/',
+        description: 'Ecommerce realizado en Wordpress con Elementor y Woocommerce. Se trata de una tienda online de venta de flores, arreglos de flores, regalos y eventos.'
     },
     {
         id: 9,
@@ -129,15 +131,15 @@ export const projects = [
         description: 'Este proyecto fue realizado para minimalart.co, se realiza la configuracion y puesta en marcha de un cms headless en FaustJS y su frontend realizado en NextJS.'
     },
     {
-        id: 14,
+        id: 15,
         image: Bamuba,
         name: 'Web Design - Bamuba Turismo',
         meta: 'Wordpress - Elementor - Woocommerce',
-        vercel: 'https://info.bamubadeltaturismo.com.ar/',
-        description: 'Proyecto realizado en Wordpress con Elementor y Woocommerce para reserva de paquetes de viajes, el sitio se encuentra aún en fase staging.'
+        vercel: 'https://bamuba.tur.ar/',
+        description: 'Proyecto realizado en Wordpress con Elementor y Woocommerce para reserva de paquetes de viajes. Contiene custom code para utilizar catalago y checkout directo a whatsapp'
     },
     {
-        id: 15,
+        id: 14,
         image: TuttiPet,
         name: 'Web Design - TuttiPet',
         meta: 'Wordpress - Elementor - Woocommerce',
@@ -151,5 +153,13 @@ export const projects = [
         meta: 'Wordpress - Elementor',
         vercel: 'https://nesus.com.ar',
         description: 'Rediseño completo de web, se migro de un antiguo diseño a una landing page institucional mas funcional.'
+    },
+    {
+        id: 17,
+        image: CorazonesVagabundos,
+        name: 'Web Design - Corazones Vagabundos',
+        meta: 'Wordpress - Elementor',
+        vercel: 'https://corazonesvagabundos.com.ar',
+        description: 'Proyecto realizado con Wordpress y Elementor, se trata de una landing page institucional para una ONG que ayuda a animales en situación de calle.'
     },
 ]

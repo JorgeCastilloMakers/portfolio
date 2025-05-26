@@ -13,7 +13,7 @@ export const ProjectsSection = () => {
           </Reveal>
 
           <div className="card-container">
-              {projects.map(({image, name, meta, vercel, github, description, id}) => (
+              {projects.sort((a, b) => b.id - a.id).map(({image, name, meta, vercel, github, description, id}) => (
                   <ProjectCard
                       key={id}
                       image={image}
