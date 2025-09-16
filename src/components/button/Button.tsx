@@ -12,7 +12,7 @@ export const Button: FC<Props> = ({ text }) => {
   const handleClick = () => {
     const link = document.createElement('a');
     link.href = fileUrl;
-    link.download = 'JorgeCastilloCV.pdf';
+    link.download = 'JorgeCastillo_CV.pdf';
     link.click();
     confetti({
       particleCount: 100,
