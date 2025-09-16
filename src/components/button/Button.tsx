@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import './button.scss';
-import fileUrl from '../../assets/JorgeCastilloCV.pdf'
+import fileUrl from '../../assets/JorgeCastillo_CV.pdf'
 import confetti from 'canvas-confetti';
 
 interface Props{
